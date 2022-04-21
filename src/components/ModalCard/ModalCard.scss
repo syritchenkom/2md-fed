@@ -1,0 +1,28 @@
+@import '../../scss/variables';
+
+.modalCard {
+   .modalHeader {
+      display: flex;
+      flex-direction: row-reverse;
+      .modalHeaderButton {
+         padding: 2px;
+         margin-bottom: 2rem;
+         border-radius: 50%;
+         background-color: $color-white;
+         color: $color-blue;
+
+      }
+      .modalTitle > h3 {
+         margin: 12px;
+         text-transform: uppercase;
+         font-weight: bold;
+      }
+      .modalTitle > p {
+         margin: 12px;
+         font-size: 12px;
+      }
+   }
+   .modalBody {
+      padding: 0;
+   }
+}
