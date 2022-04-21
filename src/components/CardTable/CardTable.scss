@@ -1,0 +1,51 @@
+@import '../../scss/variables';
+
+.cardCol {
+   display: flex;
+   justify-content: center;
+   .cardContainer {
+      width: 33.5rem;
+      background-color: $color-l-blue;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .cardImg {
+         width: 12rem;
+         margin: 0 50px 0 -60px;
+      }
+      .cardBody {
+         background-color: $color-dark-white;
+         display: flex;
+         align-items: center;
+         align-content: center;
+         flex-wrap: wrap;
+         color: $color-blue;
+         padding: 4rem 2rem;
+         .cardTitle {
+            font-size: 24px;
+            margin-bottom: 10px;
+         }
+         .cardText {
+            font-size: 12px;
+            margin-bottom: 20px;
+            line-height: 1.5;
+         }
+         .cardBtnFirst {
+            width: 8rem;
+            margin-right: 25px;
+            border-color: $color-blue;
+            color: $color-blue;
+            text-transform: uppercase;
+            &:hover {
+               background-color: $color-blue;
+               color: $color-white;
+               text-transform: uppercase;
+            }
+         }
+         .cardBtnSecond {
+            background-color: $color-blue;
+            text-transform: uppercase;
+         }
+      }
+   }
+}
