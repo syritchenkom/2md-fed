@@ -1,0 +1,33 @@
+//color options
+@import './variables';
+
+//bootstrap sass settings
+@import "~bootstrap/scss/bootstrap";
+
+//basic setup, colors amd fonts
+@import './reset';
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	box-sizing: border-box;
+	
+	body {
+		position: relative;
+		min-height: 100%;
+		background-color: $color-white;
+		// overflow: auto !important;
+		font-family: 'Marck Script',	cursive;
+		font-family: 'PT Serif', 'Tinos', serif;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+
+		// .container {
+		// 	padding: 0 !important;
+		// }
+
+		img {
+			max-width: 100%;
+		}
+	}
+}
