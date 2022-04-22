@@ -12,6 +12,7 @@ const ModalCard = ({
 	const handleClose = () => setModalOpen(false);
 	return (
 		<>
+			{/* Modal window section */}
 			<Modal
 				show={modalOpen}
 				className="modalCard"
@@ -31,6 +32,7 @@ const ModalCard = ({
 					</Modal.Title>
 				</Modal.Header>
 				<Modal.Body className="modalBody" scrollable="false">
+					{/* Add to modal body carousel */}
 					<Carousel
 						modalOpen={modalOpen}
 						setModalOpen={setModalOpen}

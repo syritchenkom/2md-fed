@@ -21,6 +21,7 @@ function Home() {
 	}
 	return (
 		<Container className="homeContainer">
+			{/* Import Card table */}
 			<CardTable
 				galleryModals={galleryModals}
 				setGalleryModals={setGalleryModals}

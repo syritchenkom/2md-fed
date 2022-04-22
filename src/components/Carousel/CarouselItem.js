@@ -8,7 +8,6 @@ const CarouselItem = ({
 	galleryModals,
 	setGalleryModals
 }) => {
-	// const [index, setIndex] = useState(false);
 	const [index, setIndex] = useState(0);
 
 	const handleSelect = (selectedIndex, e) => {
@@ -31,19 +30,22 @@ const CarouselItem = ({
 				}
 				indicators={false}
 				interval={null}
-				// autoPlay={false}
+				autoPlay={false}
 				activeIndex={index}
 				onSelect={handleSelect}>
 				{/* Take data-photo from picsum.photos*/}
 				{galleryModals.map((image, index) => {
+					// Destructuring the elements from API
 					const { author, download_url } = image;
 					return (
 						<Carousel.Item key={index} className="carouselItem">
+							{/* Extract a photo from api */}
 							<img
 								className="d-block w-100 h-100"
 								src={download_url}
 								alt={author}
 							/>
+							{/* Extract author photo from api */}
 							<Carousel.Caption className="carouselCaption">
 								Photo's {author}
 							</Carousel.Caption>

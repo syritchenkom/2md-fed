@@ -5,6 +5,7 @@ import './Footer.scss';
 const Footer = () => {
 	return (
 		<footer className="py-5 d-flex">
+			{/* Footer text section */}
 			<Row className="footerRowText">
 				<Col>
 					<Card className="footerCard">
@@ -39,6 +40,7 @@ const Footer = () => {
 				</Col>
 			</Row>
 			<Row>
+				{/* Footer button section */}
 				<Col>
 					<Button className="btn footerBtn">
 						<i class="bi bi-instagram"></i>

@@ -19,12 +19,14 @@ const CardTable = ({ galleryModals, setGalleryModals }) => {
 							<Card.Title className="cardTitle">
 								<h1>This is main page title.</h1>
 							</Card.Title>
+							{/* If not pressed the button shows it */}
 							{isOpen ? (
 								<Card.Text className="cardText">
 									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea
 									officiis vitae...
 								</Card.Text>
 							) : (
+								// If the button is pressed it shows it
 								<Card.Text className="cardText">
 									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea
 									officiis vitae repellendus recusandae, nulla nesciunt
@@ -47,6 +49,7 @@ const CardTable = ({ galleryModals, setGalleryModals }) => {
 								onClick={() => setModalOpen(true)}>
 								Show Gallery
 							</Button>
+							{/* When pressed, this modal window is displayed */}
 							<ModalCard
 								modalOpen={modalOpen}
 								setModalOpen={setModalOpen}
