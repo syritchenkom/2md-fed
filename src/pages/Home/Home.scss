@@ -1,8 +1,14 @@
 @import '../../scss/base';
 
 .homeContainer {
-   height: 45rem;
+   min-height: 74vh;
    display: flex;
    justify-content: center;
    align-items: center;
+}
+
+@media (max-width: 425px) {
+   .homeContainer {
+      height: 18rem;
+   }
 }

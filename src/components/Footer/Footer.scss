@@ -9,6 +9,7 @@ footer {
    left: 0;
    right: 0;
    width: 100%;
+   padding: 3rem 0;
    .footerCard {
       color: $color-white;
       background-color: transparent;
@@ -35,5 +36,24 @@ footer {
       border-color: transparent;
       background-color: #0b90d7;
       }
+   }
+}
+
+@media (max-width: 425px) {
+   footer {
+      height: 15rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: fixed;
+      padding-bottom: 0;
+      .footerRowText {
+         width: 100%;
+         margin-top: 1rem;
+         .footerCard {
+            width: 5rem;
+         }
+      }
+
    }
 }

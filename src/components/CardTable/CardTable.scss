@@ -18,6 +18,7 @@
          display: flex;
          align-items: center;
          align-content: center;
+         justify-content: center;
          flex-wrap: wrap;
          color: $color-blue;
          padding: 4rem 2rem;
@@ -31,7 +32,7 @@
             line-height: 1.5;
          }
          .cardBtnFirst {
-            width: 8rem;
+            width: 9rem;
             margin-right: 25px;
             border-color: $color-blue;
             color: $color-blue;
@@ -45,6 +46,27 @@
          .cardBtnSecond {
             background-color: $color-blue;
             text-transform: uppercase;
+         }
+      }
+   }
+}
+
+@media (max-width: 425px) {
+   .cardCol {
+      .cardContainer {
+         .cardImg {
+            display: none;
+         }
+         .cardBody {
+            padding: 2rem 2rem;
+            .cardText {
+               overflow: auto;
+               height: 4rem;
+            }
+            .cardBtnFirst {
+               margin-right: 0;
+               // margin-bottom: 10px;
+            }
          }
       }
    }

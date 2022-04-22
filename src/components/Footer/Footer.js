@@ -4,8 +4,8 @@ import './Footer.scss';
 
 const Footer = () => {
 	return (
-		<footer className="py-5 mt-5 d-flex">
-			<Row>
+		<footer className="py-5 d-flex">
+			<Row className="footerRowText">
 				<Col>
 					<Card className="footerCard">
 						<Card.Body className="footerCardBody">
